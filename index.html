@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="OMA - Observatorio Minero Argentino, una iniciativa de Panorama Minero y la Universidad de Buenos Aires (UBA)">
+    <meta name="description" content="OMA - Observatorio Minero Argentino, una iniciativa del Centro Argentino de Ingenieros (CAI), Panorama Minero (PM) y la Universidad de Buenos Aires (UBA)">
     <title>OMA - Observatorio Minero Argentino</title>
     <style>
         * {
@@ -820,8 +820,6 @@
         }
 
         /* Alianza CAI + Monitor */
-        .badge-cai { margin-left: 0.5rem; }
-        @media (max-width: 768px) { .badge-cai { margin-left: 0; } }
         .quote-block small { display: block; margin-top: 0.5rem; font-style: normal; color: #555; }
         .stat-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
         .stat-card { background: white; border-radius: 6px; padding: 1.2rem; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.08); border-top: 3px solid #2a9d5c; }
@@ -835,8 +833,7 @@
         <div class="header-content">
             <button class="lang-toggle" id="langToggle" onclick="toggleLanguage()" aria-label="Switch language / Cambiar idioma">EN</button>
             <div class="logo">🇦🇷 OMA · Observatorio Minero Argentino</div>
-            <div class="tagline">Una iniciativa de Panorama Minero y la Universidad de Buenos Aires (UBA) — midiendo demanda global, anticipando oferta argentina, guiando decisión estratégica</div>
-            <div class="badge-relacion">Evolución del modelo CeProMin, con foco exclusivo en Argentina</div>
+            <div class="tagline">Una iniciativa del Centro Argentino de Ingenieros (CAI), Panorama Minero (PM) y la Universidad de Buenos Aires (UBA) — midiendo demanda global, anticipando oferta argentina, guiando decisión estratégica</div>
             <div class="badge-relacion badge-cai">Monitor de Ingeniería de Minas en alianza con el Centro Argentino de Ingenieros (CAI)</div>
         </div>
     </header>
@@ -1490,7 +1487,7 @@
     <!-- Footer -->
     <footer>
         <div class="footer-content">
-            <p id="footerCopyright">&copy; 2026 OMA - Observatorio Minero Argentino · Una iniciativa de Panorama Minero y la Universidad de Buenos Aires (UBA) · Monitor de Ingeniería de Minas en alianza con el CAI</p>
+            <p id="footerCopyright">&copy; 2026 OMA - Observatorio Minero Argentino · Una iniciativa del Centro Argentino de Ingenieros (CAI), Panorama Minero (PM) y la Universidad de Buenos Aires (UBA)</p>
             <div class="footer-links">
                 <a href="#" data-tab-link="monitor" onclick="navigateTo('monitor')">Monitor MIMA</a>
                 <a href="#" data-tab-link="gobernanza" onclick="navigateTo('gobernanza')">Gobernanza</a>
@@ -2066,14 +2063,12 @@
         const HEADER_I18N = {
             es: {
                 logo: '🇦🇷 OMA · Observatorio Minero Argentino',
-                tagline: 'Una iniciativa de Panorama Minero y la Universidad de Buenos Aires (UBA) — midiendo demanda global, anticipando oferta argentina, guiando decisión estratégica',
-                badge: 'Evolución del modelo CeProMin, con foco exclusivo en Argentina',
+                tagline: 'Una iniciativa del Centro Argentino de Ingenieros (CAI), Panorama Minero (PM) y la Universidad de Buenos Aires (UBA) — midiendo demanda global, anticipando oferta argentina, guiando decisión estratégica',
                 badgeCai: 'Monitor de Ingeniería de Minas en alianza con el Centro Argentino de Ingenieros (CAI)'
             },
             en: {
                 logo: '🇦🇷 OMA · Argentine Mining Observatory',
-                tagline: 'An initiative of Panorama Minero and the University of Buenos Aires (UBA) — measuring global demand, anticipating Argentine supply, guiding strategic decisions',
-                badge: 'Evolution of the CeProMin model, with an exclusive focus on Argentina',
+                tagline: 'An initiative of the Argentine Center of Engineers (CAI), Panorama Minero (PM) and the University of Buenos Aires (UBA) — measuring global demand, anticipating Argentine supply, guiding strategic decisions',
                 badgeCai: 'Mining Engineering Monitor in partnership with the Argentine Center of Engineers (CAI)'
             }
         };
@@ -2087,11 +2082,11 @@
 
         const FOOTER_I18N = {
             es: {
-                copyright: '&copy; 2026 OMA - Observatorio Minero Argentino · Una iniciativa de Panorama Minero y la Universidad de Buenos Aires (UBA) · Monitor de Ingeniería de Minas en alianza con el CAI',
+                copyright: '&copy; 2026 OMA - Observatorio Minero Argentino · Una iniciativa del Centro Argentino de Ingenieros (CAI), Panorama Minero (PM) y la Universidad de Buenos Aires (UBA)',
                 note: 'Sitio independiente del de CeProMin — contenido en desarrollo'
             },
             en: {
-                copyright: '&copy; 2026 OMA - Argentine Mining Observatory · An initiative of Panorama Minero and the University of Buenos Aires (UBA) · Mining Engineering Monitor in partnership with CAI',
+                copyright: '&copy; 2026 OMA - Argentine Mining Observatory · An initiative of the Argentine Center of Engineers (CAI), Panorama Minero (PM) and the University of Buenos Aires (UBA)',
                 note: 'Site independent from CeProMin — content under development'
             }
         };
@@ -2163,7 +2158,6 @@
 
             document.querySelector('.logo').textContent = HEADER_I18N[lang].logo;
             document.querySelector('.tagline').textContent = HEADER_I18N[lang].tagline;
-            document.querySelector('.badge-relacion').textContent = HEADER_I18N[lang].badge;
             document.querySelector('.badge-cai').textContent = HEADER_I18N[lang].badgeCai;
             document.querySelector('.ticker-label').textContent = TICKER_LABEL[lang];
 
